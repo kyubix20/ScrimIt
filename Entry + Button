@@ -1,0 +1,17 @@
+<label>Pseudo : <input type="text" name="pseudo"/></label> // Entrée pseudo
+
+<p align="center"> 
+<input onclick="myFunction()" type="button" value="Join Queue" id="btn" ></input> // Boutton
+</p>
+
+<script>
+function myFunction() //Fonction change valeur boutton
+{ 
+ var elem = document.getElementById('btn');
+ if (elem.value == 'Join Queue') {
+    elem.value = 'In Queue'; 
+ } else {
+    elem.value = 'Join Queue';
+  }
+}
+</script>
