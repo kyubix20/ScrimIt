@@ -1,0 +1,24 @@
+<form action="pseudoGet" method="get">
+	Pseudo : <input type="text" name="pseudo" id="pseudo"><br/> 
+	Name: <span id="result"></span>
+	<br><input  type="button" value="Join Queue" id="btn" onclick="myFunction(); user()">
+</form>
+
+<script>
+	function user() {
+		document.getElementById("result").innerHTML = document.getElementById('pseudo').value;
+}
+</script>
+	
+
+<script> //Function change value button
+function myFunction() 
+{ 
+ var elem = document.getElementById('btn');
+ if (elem.value == 'Join Queue') {
+    elem.value = 'In Queue'; 
+ } else {
+    elem.value = 'Join Queue';
+  }
+}
+</script>
